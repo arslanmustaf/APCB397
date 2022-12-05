@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            padding: 0 30px;
+            background-color: rgb(2, 2, 26);
+            opacity: 80%;
+            box-shadow: 0 8px 32px 0 rgba(255, 255, 255, .3);
+        }
+
+        #heade {
+            padding-top: 25px;
+            background-image: linear-gradient(rgba(79, 77, 104, 0.918), rgba(79, 77, 104, 0.918));
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+        }
+
+
+
+        .logo {
+            width: 130px;
+            height: 90;
+            margin-left: 80px;
+            margin-top: 0%;
+
+        }
+
+        .hamburger {
+            margin-right: 30px;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .hamburger .line {
+            width: 35px;
+            height: 5px;
+            background-color: cornsilk;
+            margin: 8px;
+        }
+
+        nav ul {
+            margin: 2px 50px;
+            display: flex;
+        }
+
+        .navbar.active {
+            height: 450px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            display: inline-block;
+            justify-content: space-between;
+            margin: 10px 30px;
+            padding: 15px;
+            color: white;
+            font-weight: bold;
+            border: 1px solid transparent;
+            border-radius: 30px;
+            transition: .3s;
+        }
+
+        nav ul li :hover {
+            background-color: white;
+            color: black;
+            transform: scale(1.2);
+        }
+
+        .submit-btn {
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background: #F3C693;
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+        }
+
+        .login-form{
+            background: transparent;
+            opacity: 70%;
+            backdrop-filter: blur(30px);
+            width: 400px;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 40px;
+        }
+        .login-form h1{
+            margin: 20px 0;
+            color: white;
+            font-weight: bolder;
+            text-shadow: 0px 0px 1px 2px green;
+        }
+        .login-form input{
+            width: 200px;
+            margin: 20px 0;
+            background-color: transparent;
+            border: 1px solid #000;
+            border-radius: 30px;
+            height: 24px;
+            padding: 4px 2px;
+            text-align: center;
+            justify-content: center;
+        }
+        ::placeholder{
+            padding-top: 4px;
+            font-size: 14px;
+            color: #000;
+        }
+        #submit-btn{
+            width: 100px;
+            height: 30px;
+            font-size: 18px;
+            background-color: transparent;
+            border-radius: 20px;
+           border-color: #F3C693;
+           box-shadow: 0 1px 4px 0 rgba(255, 255, 255, .3);
+        }
+        #submit-btn.hover{
+            transform: scale(1.1);
+            background-color: white;
+            color: #F3C693;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="heade">
+        <header>
+            <img src="logo.png" class="logo">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i> Product</a></li>
+                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i> Services</a></li>
+                    <li><a href=""><i class="fa-solid fa-user"></i> Login</a></li>
+                    <li><a><i class="fa-solid fa-circle-info"></i> Help</a></li>
+                    <!-- <li><button class='loginbtn'onclick="document.getElementById('login-form').style.display='block'"style="width=auto;>login</button></li> -->
+                </ul>
+
+            </nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </header>
+        <form action="action.php" class="login-form">
+            <h1>User Login</h1>
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <br>
+            <label for="email">Password: <input type="password" id="password" placeholder="Enter Your Password"></label>
+            <br>
+            <button type="button" id="submit-btn">Log In</button>
+
+        </form>
+    </div>
+</body>
+<script>
+    var modal = document.getElementById('login-form');
+    window.onclick = function(event){
+        if (event.target == modal)
+        {
+            modal.style.display = "none";
+        }
+    }
+</script> -->
+
+</html>
