@@ -5,47 +5,48 @@
     <meta charset="UTF-16">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pcb-board.png" type="image/x-icon">
     <title>WEB PAGE</title>
     <link rel="stylesheet" href="web style.css">
     <script src="https://kit.fontawesome.com/769b6db16b.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <div id="heade">
-        <header>
-            <img src="logo.png" class="logo">
-        <nav class="navbar">
-            <ul>
-                <li class="homeactive"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li> 
-                <li><a href=""><i class="fa-solid fa-bag-shopping"></i> Product</a></li>
-                <li><a href=""><i class="fa-solid fa-bag-shopping"></i> Services</a></li>
-                <li><a href="login.html"><i class="fa-solid fa-user"></i> Login</a></li>
-                <li><a><i class="fa-solid fa-circle-info"></i> Help</a></li>
-            </ul>
-           
-        </nav>
+    <header> 
+        <a href="#"><img src="logo1.png" id="logo"></a>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
-        </div>
-        </header>
-        <h1>Prototype PCB Design</h1>
-        <div class="cpi">
-            <a href="check it.html" class="chk">Check it Out</a>
-            <div class="intro">
-                <p>
-                    We provide you a Top level PCB designs according to Today's Requirments in Electronic equipments.These PCBs are also Designed and approved by our Engineers with hard work.
-                </p>
+        </div>      
+        <nav class="navbar">
+            <ul>
+                <li class="nav-btn"><a href="#home"><i class="fa-solid fa-home"></i> Home</a></li>
+                <li class="nav-btn"><a href="#services"><i class="fa-solid fa-bag-shopping"></i> Services</a></li>
+                <li class="nav-btn"><a href=""><i class="fa-solid fa-layer-group"></i> Designs</a></li>
+                <li class="nav-btn"><a href=""><i class="fa-solid fa-user"></i> Login</a></li>
+                <li class="nav-btn"><a href=""><i class="fa-solid fa-circle-info"></i> Help</a></li>
+            </ul>
+        </nav>
+    </header>
+                           <!-- Header Completed -->
+    <section id="home">
+        <h1 class="heading">Prototype PCB Designs</h1>
+            <button class="btn">Order Now</button>
+        </section>
+        <section id="services">
+            <h2 class="sheading">Our Services</h2>
+            <div class="ser">
+                <div class="services">
+                    <img src="scheme.png" class="spics" >
+                    <p class="pg"><span class="h-s_p">Design Schematic</span><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam pariatur ratione, suscipit commodi magni facilis molestiae in impedit consectetur delectus, aut, veniam iusto quibusdam ad! Veniam earum quos velit voluptas!</p>
+                </div>
+                <div class="services">
+                    <img src="pcb-board.png" class="spics">
+                    <p class="pg"><span class="h-s_p">Design PCB</span><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam pariatur ratione, suscipit commodi magni facilis molestiae in impedit consectetur delectus, aut, veniam iusto quibusdam ad! Veniam earum quos velit voluptas!</p>
+                
+                </div>
             </div>
-        </div>
-        <div class="container">
-            <h3>This is a Sample Design</h3>
-            <div class="pic">
-                <img src="pcb.png" alt="">
-            </div>
-        </div>
-    </div>
+        </section>
 </body>
 <script>
     hamburger = document.querySelector(".hamburger");
@@ -54,5 +55,4 @@
         navbar.classList.toggle("active");
     } 
 </script>
-
 </html>
