@@ -280,7 +280,8 @@ h5{
     }
     .navbar.active{
         height: auto;
-        color: #19660fa6;
+        background-color: #47ce35e5;
+
     }
     .navbar.active ul{
         opacity: 100%;
