@@ -215,6 +215,10 @@ h5{
     nav{
         width: 75%;
     } 
+    .nav-btn a{
+        margin: 2px;
+        padding: 10px;
+    }
 }
 @media (max-width:890px){
     header{
@@ -252,8 +256,8 @@ h5{
         width: 88%;
     }
     .nav-btn a{
-        margin: 3px;
-        padding: 18px;
+        margin: 2px;
+        padding: 9px;
         font-size: 17px;
     }
                                                               /* Home */
