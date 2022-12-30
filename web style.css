@@ -4,7 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-            /* Header and Navbar  */
+                                        /* Header and Navbar  */
 header{
     position: fixed;
     margin-top: 20px;
@@ -88,12 +88,12 @@ nav ul{
     opacity: .89;
 }
 .heading{
-    padding: 14px;
+    padding: 18px 2px;
     color: #ffff;
-    font-size: 64px;
+    font-size: 70px;
     font-family:sans-serif;
 }
-.btn{
+#home .btn{
     background-color: azure;
     color: rgb(0, 35, 148);
     font-size: 22px;
@@ -102,6 +102,8 @@ nav ul{
     border: 2px solid transparent;
     border-radius: 40px;
 }
+
+
                                           /* Home COMPLETED */
                                                    /* 
                                                     *
@@ -122,8 +124,9 @@ nav ul{
 .sheading{
     color: rgb(9, 0, 104);
     text-shadow: 1px 2px 5px rgba(0, 1, 58, 0.527);
-    font-size: 54px;
+    font-size: 58px;
     text-align: center;
+    padding: 36px;
 }
 .services{
     display: flex;
@@ -154,8 +157,8 @@ nav ul{
                                                     *
                                                     *
                                                     *
-                                                    *
-                                                help */
+                                                    */
+                                                /*help*/
 
 
 #help{
@@ -163,9 +166,12 @@ nav ul{
     padding: 8px;
 }   
 #help h5{
+    padding:14px;
     font-size: 28px;
 } 
 #help p{
+    margin:4px 46px;
+    padding: 4px;
     font-size: 16px;
     font-weight: bold;
 }  
@@ -198,6 +204,8 @@ h5{
     }
     nav{
         width: 70%;
+    }.nav-btn{
+        margin: 4px;
     }
 }
 @media (max-width:1020px){
@@ -215,6 +223,10 @@ h5{
     nav{
         width: 80%;
     }
+                                          /* Home */
+    .heading{
+        font-size: 60px;
+    }
 }
 @media(max-width:790px){
     header{
@@ -231,22 +243,25 @@ h5{
         height:60px;
     }
 }
-@media (max-width:740px){
+@media (max-width:750px){
     header{
-        padding:2px 8px;
+        padding:3px 8px;
         background-color: #48ce3569;
     }
     nav{
-        width: 90%;
+        width: 88%;
     }
     .nav-btn a{
-        margin: 4px;
+        margin: 3px;
+        padding: 18px;
+        font-size: 17px;
     }
                                                               /* Home */
     .heading{
         font-size: 52px;
         color: rgba(1, 5, 66, 0.829);
         text-shadow: 1px 2px 10px rgba(0, 128, 0, 0.74);
+        padding: 18px 3px;
     }
     #home::before{
             background: url(back2.jpg) no-repeat center center/cover;
@@ -260,11 +275,12 @@ h5{
         flex-flow: column;
     }
     .sheading{
-        font-size: 36px;
+        font-size: 42px;
+        padding: 24px;
     }
     .services{
         width: 80vw;
-        margin-top: 16px;
+        margin-top: 22px;
     }
     .spics{
         width: 30vw;
@@ -279,6 +295,18 @@ h5{
         font-size: 14px;
         font-family: Arial, Helvetica, sans-serif;
     }
+                                            /* services ended
+                                                    *
+                                                    *
+                                                    *
+                                                    *
+                                                help */
+#help p{
+    font-size: 14px;
+}
+#help span{
+    font-size: 16px;
+}
 }
 @media(max-width:630px){
     header{
@@ -307,22 +335,28 @@ h5{
     .navbar.active{
         height: auto;
         background-color: #47ce35e5;
-
     }
     .navbar.active ul{
         opacity: 100%;
     }
                                                              /* Home */
     .heading{
-        font-size: 40px;
+        font-size: 44px;
+        padding: 0px 0px 30px 0px;
     }
     .btn{
         font-size: 18px;
+        color: #115e07;
     }
+                                                           /* help */
+   #help p{
+    margin: 4px 28px;
+   }
+
 }
-@media(max-width:490px){
+@media(max-width:495px){
     header{
-        padding:1px 4px;
+        /* padding:1px 4px; */
         height: 60px;
     }
     #logo{
@@ -350,5 +384,4 @@ h5{
         font-size: 18px;
     }
 }
-
-/* media Queries  Ended */
+                                  /* media Queries  Ended */
